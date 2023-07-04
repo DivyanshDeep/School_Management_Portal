@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <link rel="shortcut icon" href="favicon-3.png" type="image/x-icon" />
+  <body>
+    <h1>Student Management System</h1>
+
+    <div id="form-container">
+      <h2>Add/Edit Student</h2>
+      <form id="student-form">
+        <input type="hidden" id="student-id" />
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+        <label for="age">Age</label>
+        <input type="number" id="age" required />
+        <label for="grade">Grade</label>
+        <input type="text" id="grade" required />
+        <label for="degree">Degree</label>
+        <input type="text" id="degree" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+        <button type="submit" id="submit-button">Add Student</button>
+      </form>
+    </div>
+
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search Students" />
+    </div>
+
+    <div id="students-table-container">
+      <table id="students-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Degree</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="students-table-body"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
